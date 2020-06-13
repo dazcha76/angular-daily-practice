@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class Day1Component {
     public iteration = '1st';
     public reversed = false;
+    public buttonText = '';
 
 
     constructor(){
@@ -17,4 +18,7 @@ export class Day1Component {
         }, 2000)
     }
 
+    onClick(){
+        this.buttonText = 'You clicked me!'
+    }
 }
