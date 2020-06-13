@@ -16,7 +16,10 @@
 
         <label>What's your name?</label><br>
         <input type="text" [(ngModel)]="name">
-        <p *ngIf="name !== ''">You're name is {{ name }}</p>
+        <p *ngIf="name !== ''; else noName">You're name is {{ name }}</p>
+        <ng-template #noName>
+            <p>Please enter your name....</p>
+        </ng-template>
 
         <p *ngFor="let click of buttonClicks; let i = index">You clicked the button {{ i + 1 }} times!</p>
     </div>
