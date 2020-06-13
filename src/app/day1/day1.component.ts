@@ -10,6 +10,7 @@ export class Day1Component {
     public iteration = '1st';
     public reversed = false;
     public buttonText = '';
+    public buttonTarget = '';
 
 
     constructor(){
@@ -18,7 +19,9 @@ export class Day1Component {
         }, 2000)
     }
 
-    onClick(){
-        this.buttonText = 'You clicked me!'
+    onClick(event){
+        this.buttonText = 'You clicked me!';
+        this.buttonTarget = event.target.baseURI
+        console.log(event)
     }
 }

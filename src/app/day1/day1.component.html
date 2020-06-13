@@ -8,8 +8,9 @@
             <li>Three</li>
         </ol>
 
-        <button (click)="onClick()">Click Me!</button>
+        <button (click)="onClick($event)">Click Me!</button>
 
         <p>{{ buttonText }}</p>
+        <p>This button's Base URI is: {{ buttonTarget }}</p>
     </div>
 </div>
