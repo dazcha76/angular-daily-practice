@@ -8,7 +8,13 @@ import { Component } from '@angular/core';
 
 export class Day1Component {
     public iteration = '1st';
+    public reversed = false;
 
 
-    constructor(){}
+    constructor(){
+        setTimeout(() => {
+            this.reversed = true;
+        }, 2000)
+    }
+
 }
