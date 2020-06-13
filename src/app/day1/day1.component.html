@@ -21,6 +21,8 @@
             <p>Please enter your name....</p>
         </ng-template>
 
-        <p *ngFor="let click of buttonClicks; let i = index">You clicked the button {{ i + 1 }} times!</p>
+        <p 
+            *ngFor="let click of buttonClicks; let i = index"
+            [ngStyle]="i > 4 ? {backgroundColor: 'red'} : {backgroundColor: 'blue'}">You clicked the button {{ i + 1 }} times!</p>
     </div>
 </div>
