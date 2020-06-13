@@ -11,11 +11,13 @@
         <button (click)="onClick($event)">Click Me!</button>
 
         <p>{{ buttonText }}</p>
+
         <p>This button's Base URI is: {{ buttonTarget }}</p>
 
         <label>What's your name?</label><br>
         <input type="text" [(ngModel)]="name">
+        <p *ngIf="name !== ''">You're name is {{ name }}</p>
 
-        <p *ngFor="let click of buttonClicks; let i = index">Hi {{ name }}! You clicked the button {{ i + 1 }} times!</p>
+        <p *ngFor="let click of buttonClicks; let i = index">You clicked the button {{ i + 1 }} times!</p>
     </div>
 </div>
