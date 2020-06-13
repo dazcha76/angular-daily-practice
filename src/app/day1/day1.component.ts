@@ -11,7 +11,7 @@ export class Day1Component {
     public reversed = false;
     public buttonText = '';
     public buttonTarget = '';
-
+    public name = '';
 
     constructor(){
         setTimeout(() => {

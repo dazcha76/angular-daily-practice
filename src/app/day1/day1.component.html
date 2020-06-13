@@ -12,5 +12,10 @@
 
         <p>{{ buttonText }}</p>
         <p>This button's Base URI is: {{ buttonTarget }}</p>
+
+        <label>What's your name?</label><br>
+        <input type="text" [(ngModel)]="name">
+
+        <p>Hi {{ name }}!</p>
     </div>
 </div>
