@@ -12,6 +12,7 @@ export class Day1Component {
     public buttonText = '';
     public buttonTarget = '';
     public name = '';
+    public buttonClicks = [];
 
     constructor(){
         setTimeout(() => {
@@ -22,6 +23,6 @@ export class Day1Component {
     onClick(event){
         this.buttonText = 'You clicked me!';
         this.buttonTarget = event.target.baseURI
-        console.log(event)
+        this.buttonClicks.push(this.buttonClicks.length + 1)
     }
 }
