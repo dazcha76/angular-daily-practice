@@ -13,16 +13,18 @@ export class Day1Component {
     public buttonTarget = '';
     public name = '';
     public buttonClicks = [];
+    public clicked = false;
 
     constructor(){
         setTimeout(() => {
             this.reversed = true;
-        }, 2000)
+        }, 5000)
     }
 
     onClick(event){
         this.buttonText = 'You clicked me!';
         this.buttonTarget = event.target.baseURI
-        this.buttonClicks.push(this.buttonClicks.length + 1)
+        this.buttonClicks.push(this.buttonClicks.length + 1);
+        this.clicked = true;
     }
 }
