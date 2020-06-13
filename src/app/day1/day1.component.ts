@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class Day1Component {
+    public iteration = '1st';
+
+
     constructor(){}
 }
