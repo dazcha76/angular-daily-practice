@@ -16,6 +16,6 @@
         <label>What's your name?</label><br>
         <input type="text" [(ngModel)]="name">
 
-        <p *ngFor="let click of buttonClicks">Hi {{ name }}! You clicked the button {{ click }} times!</p>
+        <p *ngFor="let click of buttonClicks; let i = index">Hi {{ name }}! You clicked the button {{ i + 1 }} times!</p>
     </div>
 </div>
